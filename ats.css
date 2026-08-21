@@ -1,0 +1,132 @@
+@page {
+  size: Letter portrait;
+  margin: 0.6in;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: #fff;
+  color: #171717;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11pt;
+  line-height: 1.24;
+}
+
+body {
+  background: #fff;
+  margin: 0;
+}
+
+a {
+  color: #171717;
+  text-decoration: underline;
+}
+
+.ats-resume {
+  max-width: 7.3in;
+  margin: 0 auto;
+}
+
+header {
+  border-bottom: 1px solid #171717;
+  margin-bottom: 14px;
+  padding-bottom: 9px;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 25pt;
+  line-height: 1.05;
+  margin-bottom: 4px;
+}
+
+.headline {
+  font-size: 13pt;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.contact-information p {
+  display: inline;
+  margin: 0;
+}
+
+.contact-information p:not(:last-child)::after {
+  content: " | ";
+}
+
+section {
+  margin-bottom: 13px;
+}
+
+h2 {
+  border-bottom: 1px solid #777;
+  font-size: 14pt;
+  line-height: 1.15;
+  margin-bottom: 6px;
+  padding-bottom: 3px;
+}
+
+h3 {
+  font-size: 11.5pt;
+  margin-bottom: 2px;
+}
+
+.role,
+.dates {
+  margin-bottom: 3px;
+}
+
+.role {
+  font-weight: 700;
+}
+
+.dates {
+  font-style: italic;
+}
+
+ul {
+  margin-bottom: 0;
+  padding-left: 21px;
+}
+
+li {
+  margin-bottom: 3px;
+}
+
+article {
+  break-inside: avoid;
+  page-break-inside: avoid;
+  margin-bottom: 7px;
+}
+
+article:last-child {
+  margin-bottom: 0;
+}
+
+@media print {
+  html,
+  body {
+    background: #fff;
+  }
+
+  .ats-resume {
+    max-width: none;
+  }
+
+  header,
+  section,
+  article {
+    break-inside: avoid;
+  }
+}

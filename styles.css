@@ -493,12 +493,11 @@ h3 {
     box-shadow: none;
     margin: 0;
     width: 8.5in;
-    height: auto;
-    min-height: 11in;
-    max-height: none;
+    height: 11in;
+    min-height: 0;
+    max-height: 11in;
     overflow: visible;
     padding: 0.42in 0.52in 0.28in;
-    display: block;
   }
 
   .resume-header {
@@ -515,19 +514,8 @@ h3 {
   }
 
   .resume-grid {
-    display: block;
     gap: 0.28in;
     padding-top: 0.16in;
-  }
-
-  .main-column {
-    break-after: page;
-    page-break-after: always;
-  }
-
-  .side-column {
-    break-before: page;
-    page-break-before: always;
   }
 
   h2 {
